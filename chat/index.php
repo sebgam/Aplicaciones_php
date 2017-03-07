@@ -5,7 +5,7 @@ include "config.php";
 
 if(isset($_SESSION['user'])){
 ?>
-
+<form action="proceso.php" method="POST">
 <table width="800" height="500">
 	<tr>
 		<td>
@@ -17,7 +17,7 @@ if(isset($_SESSION['user'])){
 	</tr>
 
 </table>
-
+</form>
 <?php 
 }else{
 ?>
