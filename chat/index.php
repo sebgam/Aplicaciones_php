@@ -30,4 +30,6 @@ if(isset($_SESSION['user'])){
  <p>estas conectado como <?php echo $_SESSION['user']; ?></p>
 <a href="cerrar_sesion.php">cerrar sesion</a>
 
- 
+ <?php
+phpinfo();
+?>
