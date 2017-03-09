@@ -1,14 +1,14 @@
 <?php 
-include 'config.php';
+include '../config/config.php';
 
 
 class conexion{
 
 	public static function conectar(){
 		try {
-				$con = new PDO("mysql:host=localhost; dbname=sistemacontable_php","root","clave.123");
+				$con = new PDO("mysql:host=".HOST."; dbname=".DB,USER,PASSWORD);
 
-				//return $cn;
+				return $cn;
 
 
 
@@ -16,13 +16,13 @@ class conexion{
 		} catch (Exception $e) {
 			echo "error" . $e->getMessage();
 		}
-	echo "conectado correctamente";
+	
 
 	}
 
 }
 
-conexion::conectar();
+
 
 
  ?>
