@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/libreria/ruta.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -78,8 +78,8 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/rutas/rutas.php" />
-        <option value="$PROJECT_DIR$/libreria/ruta.php" />
         <option value="$PROJECT_DIR$/libreria/core.php" />
+        <option value="$PROJECT_DIR$/libreria/ruta.php" />
       </list>
     </option>
   </component>
@@ -286,12 +286,12 @@
       <workItem from="1489696348358" duration="876000" />
       <workItem from="1489697240732" duration="3660000" />
       <workItem from="1490115256728" duration="2386000" />
-      <workItem from="1490137869535" duration="2606000" />
+      <workItem from="1490137869535" duration="3202000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13210000" />
+    <option name="totallyTimeSpent" value="13806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,8 +303,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2584" y="-3" width="947" height="1048" extended-state="1" />
-    <editor active="true" />
+    <frame x="2584" y="-3" width="947" height="1048" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24919441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -485,7 +485,7 @@
     <entry file="file://$PROJECT_DIR$/libreria/ruta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding />
         </state>
       </provider>
