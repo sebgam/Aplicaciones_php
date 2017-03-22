@@ -30,15 +30,49 @@ public function submit(){
     				$controlador = $controller;//asignamos variable el controlador
     			}
     		}
-    		$this->getController();
+    		$this->getController("index",$controlador);//---llamamos al metodo quem nos recupera el controlador
     	}
     }else{
     	//controladores y metodos------
     	
     }
+    }
+
+
+public function getController($metodo,$controlador){
+
+	$metodoController ="";
+	if($metodo == "index"||$metodo==""){
+		$metodoController="index";
+	}else{
+		$metodoController=$metodo;
+	}
+	$this->incluirControlador($controlador);
+
+	if (class_exists($controlador)) {
+		$claseTemp = new $controlador();
+			if (is_callable(array($claseTemp,$metodoController))) {
+			$claseTemp->$metodoController();
+		}else{
+			die("error");
+		}
+	}else{
+		die("no exixte la clase");
+	}
 
 
 }
+
+	public function incluirControlador($controlador){
+		if(file_exists(APP_RUTA."controller/".$controlador.".php")){
+			include APP_RUTA."controller/".$controlador.".php";
+		}else{
+			die("error al encontrar el archivo de controlador");
+		}
+	}
+
+
+
 
 
 }
