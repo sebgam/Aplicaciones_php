@@ -41,17 +41,27 @@ public function submit(){
 
 public function getController($metodo,$controlador){
 
-	$metodoController ="";
+	$metodoController ="";//almacena metodo
+
+	//-------comprobamos si es index o no metodo o funcion del controlador----------
 	if($metodo == "index"||$metodo==""){
 		$metodoController="index";
 	}else{
 		$metodoController=$metodo;
 	}
+
+	//-------incluimos controlador----------
 	$this->incluirControlador($controlador);
 
+	//comprovamos si la clase existe 
 	if (class_exists($controlador)) {
+		//----creamos clase temporal en base a la varible controlador
 		$claseTemp = new $controlador();
+		//comprobamos si se puede llamar a la funcion o metodo de esa clase-----
 			if (is_callable(array($claseTemp,$metodoController))) {
+
+				//hacemos una llamada al metodo de esa clase
+				//clase->index
 			$claseTemp->$metodoController();
 		}else{
 			die("error");
@@ -64,7 +74,9 @@ public function getController($metodo,$controlador){
 }
 
 	public function incluirControlador($controlador){
+		//validando si existe el archivo o no
 		if(file_exists(APP_RUTA."controller/".$controlador.".php")){
+			//si existe lo incluimos
 			include APP_RUTA."controller/".$controlador.".php";
 		}else{
 			die("error al encontrar el archivo de controlador");
